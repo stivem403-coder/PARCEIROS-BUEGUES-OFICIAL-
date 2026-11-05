@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090807">
+  <meta name="description" content="PARCEIROS BURGUÊS — hambúrgueres 100% artesanais feitos na brasa. Sem luxo, pura excelência.">
+  <title>PARCEIROS BURGUÊS | Sem luxo, pura excelência</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio" aria-label="Parceiros Burguer início">
+    <span class="crown">♛</span><span class="brand-name">PARCEIROS</span>
+    <span class="brand-sub">★ BURGUÊR ★</span><small>DE BAIRRO, CON SABOR!</small>
+  </a>
+  <button class="cart-pill" id="cart-open">🛒 <span id="cart-count">0</span> <span class="cart-label">Meu pedido</span></button>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <p class="eyebrow">🇧🇷 SABOR BRASILEIRO • 🇨🇴 ALMA COLOMBIANA</p>
+      <h1>HAMBÚRGUERES<br><em>de verdade.</em></h1>
+      <p class="hero-copy">Todas as carnes <strong>100% artesanais</strong>, feitas na brasa.</p>
+      <p class="tagline">Sem luxo, pura excelência.</p>
+      <a class="cta" href="#cardapio">VER CARDÁPIO <span>↓</span></a>
+    </div>
+    <div class="hero-stamp"><span>100%</span><b>ARTESANAL</b><small>FEITO NA BRASA 🔥</small></div>
+  </section>
+
+  <section class="intro" id="cardapio">
+    <p class="eyebrow">ESCOLHA O SEU FAVORITO</p>
+    <h2>Nosso <em>cardápio</em></h2>
+    <p>Feito com capricho, servido com personalidade.</p>
+    <nav class="categories" aria-label="Categorias do cardápio">
+      <button class="category active" data-filter="hamburgueres">🍔 Hambúrgueres</button>
+      <button class="category" data-filter="combos">🍟 Combos</button>
+      <button class="category" data-filter="porcoes">🍟 Porções</button>
+      <button class="category" data-filter="bebidas">🥤 Bebidas</button>
+    </nav>
+  </section>
+
+  <section class="product-grid" id="products" aria-live="polite"></section>
+
+  <section class="promise">
+    <span class="flame">🔥</span>
+    <h2>SEM LUXO,<br><em>PURA EXCELÊNCIA.</em></h2>
+    <p>Carne 100% artesanal. Feita na brasa. Sabor de verdade.</p>
+  </section>
+</main>
+
+<footer>
+  <a class="brand footer-brand" href="#inicio"><span class="crown">♛</span><span class="brand-name">PARCEIROS</span><span class="brand-sub">★ BURGUÊR ★</span></a>
+  <p>De bairro, con sabor! 🇧🇷 🇨🇴</p>
+  <small>© <span id="year"></span> PARCEIROS BURGUÊS</small>
+</footer>
+
+<div class="cart-backdrop" id="cart-backdrop"></div>
+<aside class="cart-drawer" id="cart-drawer" aria-label="Seu pedido" aria-hidden="true">
+  <div class="cart-head"><div><p class="eyebrow">SEU PEDIDO</p><h2>Minha sacola</h2></div><button class="close" id="cart-close" aria-label="Fechar">✕</button></div>
+  <div id="cart-items" class="cart-items"><p class="empty">Sua sacola ainda está vazia.</p></div>
+  <div class="cart-bottom"><div class="total"><span>Total</span><strong id="cart-total">R$ 0,00</strong></div>
+    <label class="customer-label" for="customer-name">Seu nome</label><input id="customer-name" placeholder="Como podemos te chamar?">
+    <button class="whatsapp full" id="checkout">FINALIZAR PELO WHATSAPP ↗</button>
+    <small class="note">O pedido será enviado para confirmação pelo WhatsApp.</small>
+  </div>
+</aside>
+<script src="script.js"></script>
+</body>
+</html>
